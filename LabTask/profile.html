@@ -91,6 +91,169 @@
         </table>
 </section>
 
+
+<section id="registration">
+    <h2>Employee Registration</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                    <legend>Personal Information</legend>  <!-- means all these input will be related to Personal Information  -->
+                    <p>
+                        <label for="fullName">Full Name:</label> <!-- field title  -->
+                    <p>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            minlength="3"
+                            maxlength="100"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="18"
+                            max="65">
+                    </p>
+
+                    <p>
+                        <label for="hireDate">Hire Date:</label>
+
+                        <input
+                            type="date"
+                            id="hireDate"
+                            name="hireDate">
+                    </p>
+
+                    <p>
+                        <label for="employeeCode">Employee Code:</label>
+
+                        <input
+                            type="text"
+                            id="employeeCode"
+                            name="employeeCode"
+                            pattern="[A-Za-z]{2}[0-9]{4}"
+                            title="Enter two letters followed by four numbers">
+                    </p>
+
+                    <p>
+                        <label for="bio">Bio:</label>
+
+                        <textarea
+                            id="bio"
+                            name="bio"
+                            rows="5"
+                            cols="40"></textarea>
+                    </p>
+                </fieldset>
+<fieldset>
+    <legend>Employment Information</legend>   <!-- means all these input will be related to Employment Information  -->
+    <p>
+        <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="">Select a department</option>  <!-- here when we want to do an option and choose from it : dropdown-->
+                <option value="it">Information Technology</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="hr">Human Resources</option>
+                <option value="finance">Finance</option>
+            </select>
+    </p>
+
+
+<fieldset>
+    <legend>Employment Type</legend>
+        <!-- here when we want to do an option and choose from it : by circles-->
+        <input type="radio"
+            id="fullTime"
+            name="employmentType"
+            value="full-time">
+
+    <label for="fullTime">Full-time</label>
+
+
+        <input type="radio"
+            id="partTime"
+            name="employmentType"
+            value="part-time">
+
+    <label for="partTime">Part-time</label>
+
+
+    <input type="radio"
+        id="contract"
+        name="employmentType"
+        value="contract">
+
+    <label for="contract">Contract</label>
+</fieldset>
+
+<fieldset>
+    <legend>Benefits</legend>
+
+        <input type="checkbox"
+            id="healthInsurance"
+            name="benefits"
+            value="health-insurance">
+
+        <label for="healthInsurance">Health Insurance</label>
+
+
+        <input type="checkbox"
+            id="transportAllowance"
+            name="benefits"
+            value="transport-allowance">
+
+        <label for="transportAllowance">Transport Allowance </label>
+
+    <!-- here to upload file and accept pdf,.doc,.docx -->
+    <p>
+        <label for="resume">Resume:</label>
+
+            <input type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.doc,.docx">
+    </p>
+
+    <p>
+        <!-- readonly mean the user can copy and read but cannot change it  -->
+        <label for="employeeId">Employee ID:</label>
+
+            <input type="text"
+                    id="employeeId"
+                    name="employeeId"
+                    value="EMP-2026-001"
+                    readonly>
+    </p>
+
+<!-- disabled mean the fiels turned off and user cannot click or typed and the value not submitted with the form -->
+    <p>
+        <label for="legacyField">Legacy Field:</label>
+
+        <input type="text"
+            id="legacyField"
+            name="legacyField"
+            value="Legacy System Record"
+            disabled>
+    </p>
+</fieldset>
 </main>
 </body>
 </html>
