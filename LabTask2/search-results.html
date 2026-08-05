@@ -3,33 +3,38 @@
 <head>
 <meta	charset="UTF-8">
 <meta	name="viewport"	content="width=device-width, initial-scale=1.0">
-<title>Amazon Search Results</title>
+<title>Phone Search Results | FuturePhone</title>
 </head>
 
 <body>
 
 <header>
+    <h1>FuturePhone</h1>
 
-    <h1>Amazon Store</h1>
-        <!-- Search Form -->
+    <!-- Search Form -->
     <form action="#" method="get">
+        <label for="search"> Search phones:  </label>
+            <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Search for a phone">
 
-        <label for="search"> Search:  </label>
-        <input
-            type="search"
-            id="search"
-            name="search"
-            placeholder="Search products">
-
-        <button type="submit"> Search </button>
+            <button type="submit"> Search </button>
 
     </form>
+
+        <br>
+
+        <!-- Website Navigation -->
         <nav>
+
             <a href="home.html">Home</a>
             |
+            <a href="search-results.html">Phones</a>
+            |
+
             <a href="#">Account</a>
-            |   <!--to divide between the nav -->
-            <a href="search-results.html">Products</a>   <!-- Add pages to navigate them easilly -->
             |
             <a href="product-details.html">Product Details</a>
             |
@@ -39,22 +44,21 @@
 
     </header>
 
-    <hr>
-    <!-- Breadcrumb -->
-    <nav aria-label="Breadcrumb"> <!-- it shows us where we are in the website  like :  Home > Electronics > Accessories-->
+        <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb">  <!-- it shows us where we are in the website  like :  Home > Mobile Phones > Smartphones-->
 
-        <a href="#">Home</a> &gt;
+        <a href="home.html">Home</a> &gt;
 
-        <a href="#">Electronics</a> &gt;
+        <a href="search-results.html">Mobile Phones</a> &gt;
 
-        <span>Accessories</span>   <!-- this we use it for current page becuase we dont need to be link -->
+        <span>Smartphones</span> <!-- this we use it for current page becuase we dont need to be link -->
 
     </nav>
-
-    <hr>
-
+<main>
 
 
+
+</main>
 
 
 </body>
