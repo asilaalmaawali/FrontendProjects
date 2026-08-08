@@ -5,9 +5,13 @@
 <meta	name="viewport"	content="width=device-width,	initial-scale=1.0">
 <title> Personal Profile </title>
 </head>
-<body>
-<header>
-<h1> Asila Al-Mawali</h1>
+<body style="
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5EAD7;
+    color: #6B4F3A;">
+<header style=" background-color: #B08968; color: white; text-align: center; padding: 25px;">
+<h1 style="margin: 0; "> Asila Al-Mawali</h1>
 <p>Information Security Graduate and FullStack developer Trainee</p>
 
 <nav>
@@ -117,12 +121,12 @@
 <section id="registration">
     <h2 style=" color: #B08968;" >Employee Registration</h2>
 
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form action="#" method="post" enctype="multipart/form-data" style=" background-color: #F5EAD7; padding: 25px; border-radius: 10px; color: #6B4F3A;" >
 
-            <fieldset>
-                    <legend>Personal Information</legend>  <!-- means all these input will be related to Personal Information  -->
+            <fieldset style="border: 2px solid #E9C46A; background-color: white; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+                    <legend style=" color: #B08968; font-size: 20px; font-weight: bold; padding: 5px 10px;">Personal Information</legend>  <!-- means all these input will be related to Personal Information  -->
                     <p>
-                        <label for="fullName">Full Name:</label> <!-- field title  -->
+                        <label for="fullName" style=" font-weight: bold; color: #6B4F3A; ">Full Name:</label> <!-- field title  -->
                     <p>
 
                         <input
@@ -131,65 +135,71 @@
                             name="fullName"
                             minlength="3"
                             maxlength="100"
-                            required>
+                            required
+                            style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;">
                     </p>
 
                     <p>
-                        <label for="email">Email:</label>
+                        <label for="email" style=" font-weight: bold; color: #6B4F3A; ">Email:</label>
 
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            required>
+                            required
+                            style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;">
                     </p>
 
                     <p>
-                        <label for="age">Age:</label>
+                        <label for="age" style=" font-weight: bold; color: #6B4F3A; ">Age:</label>
 
                         <input
                             type="number"
                             id="age"
                             name="age"
                             min="18"
-                            max="65">
+                            max="65"
+                            style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;">
                     </p>
 
                     <p>
-                        <label for="hireDate">Hire Date:</label>
+                        <label for="hireDate" style=" font-weight: bold; color: #6B4F3A; ">Hire Date:</label>
 
                         <input
                             type="date"
                             id="hireDate"
-                            name="hireDate">
+                            name="hireDate"
+                            style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;"    >
                     </p>
 
                     <p>
-                        <label for="employeeCode">Employee Code:</label>
+                        <label for="employeeCode" style=" font-weight: bold; color: #6B4F3A; ">Employee Code:</label>
 
                         <input
                             type="text"
                             id="employeeCode"
                             name="employeeCode"
                             pattern="[A-Za-z]{2}[0-9]{4}"
-                            title="Enter two letters followed by four numbers">
+                            title="Enter two letters followed by four numbers"
+                            style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;">
                     </p>
 
                     <p>
-                        <label for="bio">Bio:</label>
+                        <label for="bio" style=" font-weight: bold; color: #6B4F3A; ">Bio:</label>
 
                         <textarea
                             id="bio"
                             name="bio"
                             rows="5"
-                            cols="40"></textarea>
+                            cols="40"
+                            style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;"></textarea>
                     </p>
                 </fieldset>
-<fieldset>
-    <legend>Employment Information</legend>   <!-- means all these input will be related to Employment Information  -->
+<fieldset style=" border: 2px solid #E9C46A; background-color: white; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <legend style=" color: #B08968; font-size: 20px; font-weight: bold; ">Employment Information</legend>   <!-- means all these input will be related to Employment Information  -->
     <p>
-        <label for="department">Department:</label>
-            <select id="department" name="department">
+        <label for="department" style=" font-weight: bold; color: #6B4F3A; ">Department:</label>
+            <select id="department" name="department" style=" width: 95%; padding: 10px; margin-top: 6px; border: 1px solid #CDB79E; border-radius: 5px; background-color: white;">
                 <option value="">Select a department</option>  <!-- here when we want to do an option and choose from it : dropdown-->
                 <option value="it">Information Technology</option>
                 <option value="cybersecurity">Cybersecurity</option>
@@ -198,16 +208,16 @@
             </select>
     </p>
 
-
-<fieldset>
-    <legend>Employment Type</legend>
+</fieldset>
+<fieldset style=" border: 2px solid #E9C46A; background-color: white; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <legend style=" color: #B08968; font-size: 20px; font-weight: bold; " >Employment Type</legend>
         <!-- here when we want to do an option and choose from it : by circles-->
         <input type="radio"
             id="fullTime"
             name="employmentType"
             value="full-time">
 
-    <label for="fullTime">Full-time</label>
+    <label for="fullTime" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Full-time </label>
 
 
         <input type="radio"
@@ -215,7 +225,7 @@
             name="employmentType"
             value="part-time">
 
-    <label for="partTime">Part-time</label>
+    <label for="partTime" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Part-time</label>
 
 
     <input type="radio"
@@ -223,18 +233,18 @@
         name="employmentType"
         value="contract">
 
-    <label for="contract">Contract</label>
+    <label for="contract" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Contract</label>
 </fieldset>
 
-<fieldset>
-    <legend>Benefits</legend>
+<fieldset style=" border: 2px solid #E9C46A; background-color: white; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+    <legend style=" color: #B08968; font-size: 20px; font-weight: bold; ">Benefits</legend>
 
         <input type="checkbox"
             id="healthInsurance"
             name="benefits"
             value="health-insurance">
 
-        <label for="healthInsurance">Health Insurance</label>
+        <label for="healthInsurance" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Health Insurance</label>
 
 
         <input type="checkbox"
@@ -242,11 +252,11 @@
             name="benefits"
             value="transport-allowance">
 
-        <label for="transportAllowance">Transport Allowance </label>
+        <label for="transportAllowance" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Transport Allowance </label>
 
     <!-- here to upload file and accept pdf,.doc,.docx -->
     <p>
-        <label for="resume">Resume:</label>
+        <label for="resume" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Resume:</label>
 
             <input type="file"
                 id="resume"
@@ -256,7 +266,7 @@
 
     <p>
         <!-- readonly mean the user can copy and read but cannot change it  -->
-        <label for="employeeId">Employee ID:</label>
+        <label for="employeeId" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Employee ID:</label>
 
             <input type="text"
                     id="employeeId"
@@ -267,7 +277,7 @@
 
 <!-- disabled mean the fiels turned off and user cannot click or typed and the value not submitted with the form -->
     <p>
-        <label for="legacyField">Legacy Field:</label>
+        <label for="legacyField" style=" color: #6B4F3A; font-weight: bold; margin-right: 15px;">Legacy Field:</label>
 
         <input type="text"
             id="legacyField"
@@ -277,17 +287,17 @@
     </p>
 </fieldset>
 <!-- here to do button for submit and reset-->
-    <button type="submit">Register Employee</button>
+    <button type="submit" style=" background-color: #E9C46A; color: #6B4F3A; border: none; border-radius: 5px; padding: 12px 25px; font-size: 16px; font-weight: bold; cursor: pointer; margin-right: 10px;">Register Employee</button>
 
-    <button type="reset">Reset Form</button>
+    <button type="reset" style=" background-color: #6B4F3A; color: #E9C46A; border: none; border-radius: 5px; padding: 12px 25px; font-size: 16px; font-weight: bold; cursor: pointer;">Reset Form</button>
 
         </form>
 </main>
 
-    <footer>
+    <footer style=" background-color: #B08968; color: white; text-align: center; padding: 20px; margin-top: 30px;">
         <p>&copy; 2026 Asila Almawali. All rights reserved.</p>
 
-        <a href="#top">Back to top</a>
+        <a href="#top" style=" color: #FFF0A6; text-decoration: none; font-weight: bold;">Back to top</a>
     </footer>
 
 </body>
