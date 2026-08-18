@@ -108,3 +108,22 @@ return total;
 }
 
 console.log(calculateTotal(5, 10, 15, 20));
+
+
+
+const student = {
+name: "Asila",
+
+// Regular function
+getName: function () {
+    return this.name;
+},
+
+// Arrow function
+getNameArrow: () => {
+    return this.name;
+}
+};
+
+console.log(student.getName());
+console.log(student.getNameArrow());
