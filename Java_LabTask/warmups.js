@@ -23,7 +23,33 @@ console.log("The message is empty");
 
 
 const grades	=	[85,	92,	58,	73,	40]; 
-
+// for...of inside it (if/else)
 for	(const	grade	of	grades)	{
-console.log(grade); }
+if (grade >= 60) {
+    console.log(`${grade}: Pass`);
+} 
+else {
+    console.log(`${grade}: Fail`); }
+}
+
+
+//switch
+const score = 85;
+switch (true) {
+case score >= 90:
+    console.log("Grade: A");
+    break;
+
+case score >= 80:
+    console.log("Grade: B");
+    break;
+
+case score >= 70:
+    console.log("Grade: C");
+    break;
+
+default:
+    console.log("Grade: F");
+}
+
 
