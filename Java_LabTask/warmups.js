@@ -1,8 +1,8 @@
 
 
-const name = "Asila" // Declare	const for my name
+const name = "Asila" ;// Declare	const for my name
 
-let num = 0 // Declare	a num , let mean can reassign variable twice
+let num = 0; // Declare	a num , let mean can reassign variable twice
 
 // Reassign	variable	twice
 console.log(typeof num); // number
@@ -21,4 +21,9 @@ if (!mesage) {
 console.log("The message is empty");
 }
 
+
+const grades	=	[85,	92,	58,	73,	40]; 
+
+for	(const	grade	of	grades)	{
+console.log(grade); }
 
