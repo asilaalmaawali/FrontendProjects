@@ -53,3 +53,58 @@ default:
 }
 
 
+// function declaration
+function checkEven1(number) {
+if (number % 2 === 0) {
+    return true;
+} else {
+    return false;
+}
+}
+
+// function expression
+const checkEven2 = function (number) {
+if (number % 2 === 0) {
+    return true;
+} else {
+    return false;
+}
+};
+
+// Arrow function
+const checkEven3 = (number) => {
+if (number % 2 === 0) {
+    return true;
+} else {
+    return false;
+}
+};
+
+// Same input gives the same output
+const testNumber = 12;
+
+console.log(checkEven1(testNumber));
+console.log(checkEven2(testNumber));
+console.log(checkEven3(testNumber));
+
+
+// Function with a default parameter
+function welcome(name = "Student") {
+return `Welcome, ${name}`;
+}
+
+console.log(welcome("Asila"));
+console.log(welcome());
+
+//function with a rest parameter
+function calculateTotal(...values) {
+let total = 0;
+
+for (const value of values) {
+    total = total + value;
+}
+
+return total;
+}
+
+console.log(calculateTotal(5, 10, 15, 20));
