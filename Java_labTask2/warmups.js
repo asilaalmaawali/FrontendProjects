@@ -65,3 +65,15 @@ const allOrders = [...onlineOrders, ...inStoreOrders]; // Combine both arrays us
 console.log("Online orders:", onlineOrders);
 console.log("In-store orders:", inStoreOrders);
 console.log("All orders:", allOrders);
+
+//add an object
+const order1 = { id: 101, customer: "Sara Ahmed", total: 249.99,status: "Shipped"};
+
+const updateOrder = { ...order1 , status :"Cancelled"};
+
+//original	and	the copy	to	confirm	the	original's	status	didn't	change
+console.log("Original order:", order1);
+console.log("Updated copy:", updateOrder);
+
+console.log("Original status:", order1.status);
+console.log("Updated status:", updateOrder.status);
