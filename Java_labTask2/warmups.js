@@ -19,6 +19,13 @@ console.log("After adding duplicate Sohar:", cities);  // allowed duplicate
 console.log("Length after duplicate:", cities.length);
 
 //classic loop
+console.log("classic loop:");
 for	(let i	=	0;	i	<	cities.length;	i++)	{
 console.log(cities[i]);
+}
+
+//for ..of loop
+console.log("for ..of:");
+for	(const	city of	cities)	{
+console.log(city);
 }
