@@ -29,3 +29,10 @@ console.log("for ..of:");
 for	(const	city of	cities)	{
 console.log(city);
 }
+
+// Destructuring
+
+const	order	=	{	id:	101,	customer:	"Sara Ahmed",	total:	249.99,	status:	"Shipped"	};
+// destructure	customer	and	total
+const	{	customer,	total	}	=	order;
+console.log(	customer,	total	);	
