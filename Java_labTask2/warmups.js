@@ -54,3 +54,14 @@ function Order({ id, customer, total, status }) {
 }
 
 console.log(Order(order));
+
+
+// Two different arrays of order IDs
+const onlineOrders = [101, 102, 103];
+const inStoreOrders = [201, 202, 203];
+
+const allOrders = [...onlineOrders, ...inStoreOrders]; // Combine both arrays using spread (...)
+
+console.log("Online orders:", onlineOrders);
+console.log("In-store orders:", inStoreOrders);
+console.log("All orders:", allOrders);
