@@ -8,3 +8,12 @@ cities.pop();  // remove from the end ("seeb")
 cities.shift(); // reomve from the beginning ("Muscat")
 
 cities.unshift("Barka"); // adding at the first "Barka"
+
+//before duplicate
+console.log("Length before duplicate:", cities.length);
+
+//adds a duplicate city
+cities.push("Sohar");
+console.log("After adding duplicate Sohar:", cities);  // allowed duplicate 
+
+console.log("Length after duplicate:", cities.length);
