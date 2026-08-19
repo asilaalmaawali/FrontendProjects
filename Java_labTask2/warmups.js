@@ -35,4 +35,22 @@ console.log(city);
 const	order	=	{	id:	101,	customer:	"Sara Ahmed",	total:	249.99,	status:	"Shipped"	};
 // destructure	customer	and	total
 const	{	customer,	total	}	=	order;
-console.log(	customer,	total	);	
+console.log("Customer:", customer);
+console.log("Total:", total);
+
+
+const numbers = [10, 20, 30, 40, 50]; // Array with at least 4 numbers
+
+const [first, second, ...remaining] = numbers;  // Destructure the first two numbers and collect everything else
+
+console.log("First:", first);
+console.log("Second:", second);
+console.log("Remaining:", remaining);
+
+
+// Destructure the order directly in the function parameters
+function Order({ id, customer, total, status }) {
+    return `Order ${id} for ${customer}: $${total} — ${status}`;
+}
+
+console.log(Order(order));
