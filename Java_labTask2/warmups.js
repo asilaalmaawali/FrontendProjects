@@ -17,3 +17,8 @@ cities.push("Sohar");
 console.log("After adding duplicate Sohar:", cities);  // allowed duplicate 
 
 console.log("Length after duplicate:", cities.length);
+
+//classic loop
+for	(let i	=	0;	i	<	cities.length;	i++)	{
+console.log(cities[i]);
+}
