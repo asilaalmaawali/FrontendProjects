@@ -108,3 +108,29 @@ console.log("Combined total:", combinedTotal.toFixed(2));  //to print and conver
 //filter
 const shippedOrders = orders.filter(order => order.status === "Shipped");
 console.log("Shipped orders:", shippedOrders);
+
+//map
+const customerNames = orders.map(order => order.customer);
+console.log("Customer names:", customerNames);
+
+//find 
+const firstOrder = orders.find(order => order.total > 200);
+console.log("First order over $200:", firstOrder);
+
+//some  , for any cancelled order
+const CancelledOrder = orders.some(order => order.status === "Cancelled");
+console.log("Any cancelled order?", CancelledOrder);
+
+//every, all order totals are greater than 0
+const allTotals = orders.every(order => order.total > 0);
+console.log("Are all totals greater than 0?", allTotals);
+
+// sort: highest total first
+const sortedOrders = [...orders].sort((a, b) => b.total - a.total);
+console.log("Orders from highest to lowest:", sortedOrders);
+
+
+// filter and map
+const shippedCustomerNames = orders.filter(order => order.status === "Shipped")
+                                    .map(order => order.customer);
+console.log("Shipped customer names:", shippedCustomerNames);
