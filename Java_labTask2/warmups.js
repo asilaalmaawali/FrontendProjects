@@ -77,3 +77,12 @@ console.log("Updated copy:", updateOrder);
 
 console.log("Original status:", order1.status);
 console.log("Updated status:", updateOrder.status);
+
+
+function collectOrderTotals(...totals) {
+    return totals;
+}
+
+const orderTotals = collectOrderTotals(25.50, 100, 49.99, 75);
+
+console.log(orderTotals);
