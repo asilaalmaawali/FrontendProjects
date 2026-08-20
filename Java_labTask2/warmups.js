@@ -102,7 +102,9 @@ const orders = [
 
 
 // reduce 
-const combinedTotal = orders.reduce(
-    (sum, order) => sum + order.total,
-    0
-);
+const combinedTotal = orders.reduce( (sum, order) => sum + order.total,0);
+console.log("Combined total:", combinedTotal.toFixed(2));  //to print and converted to string
+
+//filter
+const shippedOrders = orders.filter(order => order.status === "Shipped");
+console.log("Shipped orders:", shippedOrders);
