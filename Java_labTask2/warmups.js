@@ -86,3 +86,23 @@ function collectOrderTotals(...totals) {
 const orderTotals = collectOrderTotals(25.50, 100, 49.99, 75);
 
 console.log(orderTotals);
+
+
+// Array have 8 order object
+const orders = [
+    { id: 11, customer: "Asila", total: 249.99, status: "Shipped" },
+    { id: 12, customer: "Ali", total: 75.00, status: "Pending" },
+    { id: 13, customer: "Noor", total: 120.00, status: "Shipped" },
+    { id: 14, customer: "Ahmed", total: 310.00, status: "Cancelled" },
+    { id: 15, customer: "Hilal", total: 45.50, status: "Shipped" },
+    { id: 16, customer: "Suad", total: 199.99, status: "Processing" },
+    { id: 17, customer: "Fatma", total: 500.00, status: "Shipped" },
+    { id: 18, customer: "Salim", total: 80.00, status: "Cancelled" }
+];
+
+
+// reduce 
+const combinedTotal = orders.reduce(
+    (sum, order) => sum + order.total,
+    0
+);
